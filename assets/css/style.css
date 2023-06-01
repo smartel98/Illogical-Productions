@@ -1,0 +1,284 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+/*Fonts*/
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url(../fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf);
+    font-weight: 100 1000;
+}
+
+@font-face {
+    font-family: 'Josefin Slab';
+    src: url(../fonts/Josefin_Slab/JosefinSlab-VariableFont_wght.ttf);
+    font-weight: 100 1000;
+}
+
+
+
+/*Overarching Tags*/
+html {
+    height: 100%;
+    margin-right: calc(-1 * (100vw - 100%));
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    -ms-overflow-style: none;
+    /* Remove Scrollbar IE and Edge */
+    scrollbar-width: none;
+    /* Remove Scrollbar Firefox */
+}
+
+body::-webkit-scrollbar {
+    display: none;
+    /* Remove Scrollbar Chrome, Safari, Opera */
+}
+
+
+
+/*Header & Image*/
+header {
+    background-color: #000000;
+    height: 72px;
+    padding: 0 0 0 14px;
+    position: relative;
+    z-index: 2;
+}
+
+#header-img {
+    float: left;
+    background-color: black;
+    background-size: cover;
+    height: 48px;
+    margin: 12px;
+}
+
+
+
+/*Navigation Menu*/
+nav {
+    height: 72px;
+    position: relative;
+    z-index: 2;
+}
+
+#mainNav ul {
+    background-color: black;
+    color: white;
+    font-size: 1.25em;
+    font-weight: 350;
+    letter-spacing: .05em;
+    list-style-type: none;
+    float: right;
+    margin: auto;
+    padding: 0 14px 13px 0;
+}
+
+#mainNav li {
+    display: inline-block;
+    padding: 36px 0 0 0;
+    margin: 0 2px 0 6px;
+}
+
+#mainNav li a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 24px 12px 15px 12px;
+}
+
+#mainNav li a:hover {
+    background-color: #e4e4e4;
+    color: #000000;
+}
+
+#mainNav .active,
+#mainNav li a:hover:not(.active) {
+    color: #000000;
+    background-color: #e4e4e4;
+}
+
+
+
+/*Nav Dropdown*/
+#mainNav li.dropdown {
+    position: relative;
+}
+
+#mainNav .dropdown-content {
+    display: none;
+    /*box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);*/
+}
+
+#mainNav .dropdown-content a {
+    display: block;
+    padding: .75em;
+}
+
+#mainNav li.dropdown:hover .dropdown-content {
+    display: block;
+    position: absolute;
+    top: 72px;
+    left: 0px;
+    min-width: 100%;
+    overflow: auto;
+    background-color: #808080;
+}
+
+a #unclickable {
+    pointer-events: none;
+}
+
+
+/*Video Reel*/
+.container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 50.625%;
+    /* 16:9 Aspect Ratio; width of 100% would be 56.25 padding*/
+}
+
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+#reel {
+    display: block;
+    margin: 32px auto 32px auto;
+    width: 90vw;
+}
+
+
+/*Logo Animation GIF*/
+#ip-animate {
+    width: 100vw;
+    height: auto;
+    max-width: none;
+    max-height: calc(100vh - 72px);
+    object-fit: contain;
+    display: block;
+    background-color: #000000;
+}
+
+
+
+/*Text*/
+h1,
+h2,
+h3 {
+    font-weight: 650;
+    letter-spacing: -0.05rem;
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.25rem;
+}
+
+p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 350;
+    letter-spacing: .05rem;
+    font-size: 1.2rem;
+    margin: 0% 12% 40px 12%;
+    text-align: justify;
+}
+
+
+
+/*'about.html' Text*/
+#content {
+    margin: auto;
+}
+
+#contact {
+    font-family: 'Josefin Slab', serif;
+    font-size: 1.25rem;
+    text-align: center;
+    line-height: 1.6rem;
+}
+
+#name {
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+#bio p {
+    float: left;
+    width: 540px;
+    margin: 0;
+    padding: 17px 24px 17px 0;
+    letter-spacing: .025rem;
+    line-height: 1.5rem;
+}
+
+#about-ip {
+    font-family: 'Josefin Slab', serif;
+    font-weight: 700;
+    letter-spacing: .075rem;
+}
+
+#bio figure {
+    float: left;
+    margin: 0;
+}
+
+figure img {
+    width: 250px;
+    margin: 0;
+}
+
+
+
+/*Footer*/
+#bottom-text {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 1rem;
+    letter-spacing: 0em;
+    color: #ffffff;
+}
+
+footer {
+    background-color: #000000;
+    padding: 12px 0px;
+    margin-top: auto;
+}
+
+
+
+
+@media screen and (max-width:700px) {
+
+    header,
+    #ip-header {
+        float: none;
+        width: 100%;
+    }
+
+
+    #ip-header figure.odd {
+        margin: 1em 0;
+    }
+
+    #ip-header figure.even {
+        margin: 1em 1em 1em 0;
+    }
+}

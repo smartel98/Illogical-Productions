@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Illogical Productions</title>
+
+    <style>
+        @font-face {
+            font-family: 'Lorean';
+            src: url(assets/fonts/Lorean/Lorean.ttf);
+        }
+
+        body {
+            background: #336699;
+            background: -webkit-linear-gradient(top left, #006699, #009933);
+            background: -moz-linear-gradient(top left, #006699, #009933);
+            background: linear-gradient(to bottom right, #006699, #009933);
+            /*background-image: linear-gradient(to right bottom, #000033, #003b70, #007086, #00a369, #99cc33);*/
+        }
+
+        #ihtsiite-container {
+            position: absolute;
+            left: 50%;
+            top: 51%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+        }
+
+        #ihtsiite {
+            width: 92vw;
+            height: auto;
+            max-width: none;
+            max-height: 80vh;
+        }
+
+        main h2 {
+            font-family: 'Lorean', sans-serif;
+            position: fixed;
+            transform: translate(-50%);
+            z-index: 1;
+            left: 50%;
+            margin: 0;
+            padding: 2em;
+            text-shadow: 2px 2px 8px #000000;
+            font-size: 2em;
+        }
+
+        main a:link {
+            color: #f2d785;
+        }
+
+        main a:visited {
+            color: #f2d785;
+        }
+
+        #trailer-link {
+            font-size: 2.5rem;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html">
+            <img src="assets/images/IP-Header.png" alt="Illogical Productions Header" id="header-img">
+        </a>
+        <nav id="mainNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="shorts.html" class="active">Work</a>
+                    <div class="dropdown-content">
+                        <a href="shorts.html">Films</a>
+                        <a href="listen.html">Listen to Yourself</a>
+                        <a href="hopetheyseeit.html">IHTSIITE</a>
+                    </div>
+                </li>
+                <li><a href="about.html">Bio & Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <h2 id="trailer-link"><a href="https://youtu.be/K85zAPbkkPo" target="_blank">Watch the Trailer Here</a>
+        </h2>
+
+        <div id="ihtsiite-container">
+            <img src="assets/images/IHTSIITE.jpg" alt="I Hope They See It In The End - Screenshot" id="ihtsiite">
+        </div>
+
+    </main>
+
+    <footer>
+        <p id="bottom-text">&copy;2022 Sam Martel</p>
+    </footer>
+
+</body>
+
+</html>

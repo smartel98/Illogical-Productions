@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <title>Illogical Productions</title>
+
+    <style>
+        main ul {
+            font-family: 'Source Code Pro', monospace;
+            font-size: 1.25em;
+            text-align: center;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #background {
+            position: absolute;
+            display: flex;
+            height: calc(100% - 104px);
+        }
+
+        .column {
+            width: 25vw;
+            min-height: calc(100vh - 109px);
+            z-index: 0;
+            padding-top: 12px;
+        }
+
+        #yellow {
+            background-color: #fff7d0;
+            left: 0%;
+        }
+
+        #blue {
+            background-color: #d0e5f6;
+            left: 25%;
+        }
+
+        #red {
+            background-color: #f6cecc;
+            left: 50%;
+        }
+
+        #green {
+            background-color: #d9ebd3;
+            left: 75%;
+        }
+
+
+
+        #names li {
+            float: left;
+            width: 25vw;
+            margin-top: 12px;
+            position: relative;
+            z-index: 1;
+            margin-bottom: -24px;
+        }
+
+
+
+        h1,
+        h2,
+        h3 {
+            position: relative;
+            z-index: 1;
+            margin: 0;
+            text-align: center;
+        }
+
+        section h1 {
+            font-family: 'Amatic SC', cursive;
+            font-size: 11.5em;
+            text-shadow: 8px 8px 16px rgba(0, 0, 0, .5);
+            padding-right: 12px;
+        }
+
+        section h2 {
+            font-family: 'Source Code Pro', monospace;
+            padding-left: 4px;
+            margin-top: -1rem;
+            margin-bottom: 1.25rem;
+        }
+
+        section h3 {
+            font-family: 'Amatic SC', cursive;
+            margin-bottom: 1.5rem;
+            font-size: 3.5rem;
+            letter-spacing: 0.1rem;
+        }
+
+        footer {
+            z-index: 1;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img src="assets/images/IP-Header.png" alt="Illogical Productions Header" id="header-img">
+        </a>
+        <nav id="mainNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="shorts.html" class="active">Work</a>
+                    <div class="dropdown-content">
+                        <a href="shorts.html">Films</a>
+                        <a href="listen.html">Listen to Yourself</a>
+                        <a href="hopetheyseeit.html">IHTSIITE</a>
+                    </div>
+                </li>
+                <li><a href="about.html">Bio & Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="background">
+            <div class="column" id="yellow"></div>
+            <div class="column" id="blue"></div>
+            <div class="column" id="red"></div>
+            <div class="column" id="green"></div>
+        </div>
+
+        <ul id="names">
+            <li>
+                Bailey<br>Hall
+            </li>
+            <li>
+                Mason<br>Hawkes
+            </li>
+            <li>
+                Isaac<br>Martel
+            </li>
+            <li>
+                Emily<br>Paruk
+            </li>
+        </ul>
+
+        <section>
+            <h1>Listen to Yourself</h1>
+            <h2>Ever wake up and just not feel like you?</h2>
+            <h3>Coming Soon!</h3>
+        </section>
+
+        <div class="container">
+            <iframe class="responsive-iframe" src="https://www.youtube.com/embed/3elSBBi_V8U?rel=0"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen id="video"></iframe>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <p id="bottom-text">&copy;2022 Sam Martel</p>
+    </footer>
+
+</body>
+
+</html>
