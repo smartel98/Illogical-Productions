@@ -215,15 +215,16 @@ p {
 }
 
 #name {
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 1.75rem;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 #bio p {
     float: left;
     width: 540px;
     margin: 0;
-    padding: 17px 24px 17px 0;
+    padding: 0 21px 17px 0;
     letter-spacing: .025rem;
     line-height: 1.5rem;
 }
@@ -232,15 +233,17 @@ p {
     font-family: 'Josefin Slab', serif;
     font-weight: 700;
     letter-spacing: .075rem;
+    font-size: 130%;
 }
 
 #bio figure {
     float: left;
     margin: 0;
+    padding-top: 3px;
 }
 
 figure img {
-    width: 250px;
+    width: 260px;
     margin: 0;
 }
 
